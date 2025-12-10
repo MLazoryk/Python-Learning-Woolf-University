@@ -8,19 +8,19 @@
 
 
 # TASK2
-name = "Maksym" # str
-age = 18 # int
-gpa = 3.2 # float
-is_student = True # bool
+#name = "Maksym" # str
+#age = 18 # int
+#gpa = 3.2 # float
+#is_student = True # bool
 
-gpa = int(gpa)
-print(gpa)
+#gpa = int(gpa)
+#print(gpa)
 
-age = float(age)
-print(age)
+#age = float(age)
+#print(age)
 
-name = bool(name)
-print(type(name))
+#name = bool(name)
+#print(type(name))
 
 
 
@@ -30,3 +30,11 @@ print(type(name))
 
 #age += "1"
 #print(age)
+
+
+
+# Exercise 1 Rectangle Area Calc
+length = float(input("Please eneter the length: "))
+width = float(input("Pplease enter the width: "))
+area = length * width 
+print (f"The area is: {area}cm^2")
