@@ -42,3 +42,7 @@ def log_error(message: str) -> None:
 # This is our main function that calculates square roots 
 # It takes one input called "numbers" which should be a list (collection) of numbers
 def calculate_square_root(numbers: list) -> None:
+
+    # It goes throgh the list one item at a time
+    # Each time through the loop, the current item is called "number"
+    for number in numbers: 
