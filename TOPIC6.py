@@ -39,3 +39,6 @@ def log_error(message: str) -> None:
     # Prints an error message with [ERROR] label 
     print(f"[ERROR] {message}")
 
+# This is our main function that calculates square roots 
+# It takes one input called "numbers" which should be a list (collection) of numbers
+def calculate_square_root(numbers: list) -> None:
