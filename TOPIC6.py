@@ -76,5 +76,7 @@ def calculate_square_root(numbers: list) -> None:
         # "as e" means we give the error a name "e" so we can use it 
         except Exception as e:
 
-
-    
+            # If any error happens, we call our log_error function
+            # We pass it a message that says what went wrong
+            # {e} will show us the actual error message from Python
+            log_error(f"Error calculating root for {number}: {e}")
