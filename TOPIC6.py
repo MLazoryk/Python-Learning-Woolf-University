@@ -32,3 +32,8 @@ def log_warning(message: str) ->None:
     # Prints a warning message with [WARNING] label
     print(f"[WARNING] {message}")
 
+# This creates a function called "log_error"
+# It works the same way as the others, but for error messages
+def log_error(message: str) -> None:
+
+    
