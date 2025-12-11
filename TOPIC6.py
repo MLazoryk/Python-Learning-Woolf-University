@@ -67,5 +67,8 @@ def calculate_square_root(numbers: list) -> None:
             # The sqrt() function is inside the math library we imported
             root = math.sqrt(number)
 
-
+            # Now we call our log_info function to show the result 
+            # ":2f" means format the nubmer with 2 decimal places
+            log_info(f"Square root of {number} is {root:.2f}")
             
+
