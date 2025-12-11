@@ -84,3 +84,9 @@ def calculate_square_root(numbers: list) -> None:
     # This line checks if this Python file is being run directly
     # (not imported by another file)
     if __name__ == "__main__":
+
+        # We create a list of numbers to test our function
+        # Lists are created with square brackets []
+        # Items in a list are separated by commas
+        # This list has: 16, -4, 9, 25, 0, 4, and the text "16" (not a number!)
+        numbers = [16, -4, 9, 25, 0, 4, "16"]
