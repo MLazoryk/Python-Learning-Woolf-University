@@ -80,3 +80,7 @@ def calculate_square_root(numbers: list) -> None:
             # We pass it a message that says what went wrong
             # {e} will show us the actual error message from Python
             log_error(f"Error calculating root for {number}: {e}")
+
+    # This line checks if this Python file is being run directly
+    # (not imported by another file)
+    if __name__ == "__main__":
