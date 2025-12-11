@@ -19,3 +19,8 @@ import math
 # "-> None" means this function doesn't return any value, it just prints smth 
 def log_info(message: str) -> None:
 
+ # This line prints (shows on screen) an information message
+ # "f" before the string means it is an f-string which lets us insert variables 
+ # # {message} will be replaced with the actual message we pass to the function 
+ # [INFO] is just a label to show this is an information message 
+    print(f"[info] {message}")
