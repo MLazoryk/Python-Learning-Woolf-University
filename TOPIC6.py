@@ -70,5 +70,11 @@ def calculate_square_root(numbers: list) -> None:
             # Now we call our log_info function to show the result 
             # ":2f" means format the nubmer with 2 decimal places
             log_info(f"Square root of {number} is {root:.2f}")
-            
 
+        # "except Exceptino as e:" catches ANY error that happens in the try block
+        # "Exception" means any kind of error
+        # "as e" means we give the error a name "e" so we can use it 
+        except Exception as e:
+
+
+    
