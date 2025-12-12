@@ -88,4 +88,17 @@
 # s = input text | str text type | bool = returns True/False
 def is_lindrome(s: str) -> bool:
 
+    # new_s = empty text container | "" = empty text
+    new_s = ""
+
+    # for = loop/cycle | char = each character | in = from inside | input text
+    for char in s: 
+
+        # if = check condition | char.isalnum() = "is character letter or number?"
+        if char.isalnum():
+
+            # "+=" means add to end | char.lower() = make character lowercase 
+            new_s += char.lower()
     
+    # s = use cleaned text | = | new_s = our new text (no spaces, lowercase)
+    s = new_s
