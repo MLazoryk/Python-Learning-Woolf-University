@@ -1,3 +1,4 @@
+# TASK 1
 # Requirements:
 # Import the math library
 # Create three logging functions for info, warnings, and errors
@@ -78,13 +79,14 @@
     # Lists are created with square brackets []
     # Items in a list are separated by commas
     # This list has: 16, -4, 9, 25, 0, 4, and the text "16" (not a number!)
+
 #    numbers = [16, -4, 9, 25, 0, 4, "16"]
     # This calls our main function and passes it the numbers list
     # The function will process each number in the list
 #    calculate_square_root(numbers)
 
 
-#TASK2
+#SAME TASK1
 #import math
 
 #def log_info(message: str) -> None: 
@@ -112,29 +114,52 @@
 
 
 
-#TASK3
+#TASK2
 # Requirements: Check if text is same forwards and backwards (ignore spaces/punctuation, ignore uppercase/lowercase)
 
 # s = input text | str text type | bool = returns True/False
-def is_palindrome(s: str) -> bool:
+#def is_palindrome(s: str) -> bool:
 
     # new_s = empty text container | "" = empty text
-    new_s = ""
+#    new_s = ""
 
     # for = loop/cycle | char = each character | in = from inside | input text
-    for char in s: 
+#    for char in s: 
 
         # if = check condition | char.isalnum() = "is character letter or number?"
-        if char.isalnum():
+#        if char.isalnum():
 
             # "+=" means add to end | char.lower() = make character lowercase 
-            new_s += char.lower()
+#            new_s += char.lower()
     
     # s = use cleaned text | = | new_s = our new text (no spaces, lowercase)
-    s = new_s
+#    s = new_s
 
     # return = give answer | s == s[::-1] = "is text equal to reversed text?"
-    return s == s[::-1]
+#    return s == s[::-1]
 
 # print = show on screen | is_palindrome() = callour funciton | "Козак з казок" = test text
-print(is_palindrome("Козак з казок")) # Output: Ture
+#print(is_palindrome("Козак з казок")) # Output: Ture
+
+
+
+#TASK2
+#from data import load_data, clean_data
+#from processing import calculate_statistics
+
+#def main():
+#    filename = "temperatures.txt"
+#    raw_data = load_data(filename)
+#    temperatures = clean_data(raw_data)
+#    stats = calculate_statistics(temperatures)
+
+#    if stats:
+#        print(f"Minimum Temperature: {stats['min']}°C")
+#        print(f"Maximum Temperature: {stats['max']}°C")
+#        print(f"Average Temperature: {stats['average']:.2f}°C")
+#        print(f"Median Temperature: {stats['median']:.2f}°C")
+#    else:
+#        print("No temperature data available.")
+
+#if __name__ == "__main__":
+#    main()
