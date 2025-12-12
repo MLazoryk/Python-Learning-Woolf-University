@@ -15,3 +15,6 @@
 
 #TASK2
 import collections
+
+Cat = collections.namedtuple('Cat',['nickname','age','owner'])
+
