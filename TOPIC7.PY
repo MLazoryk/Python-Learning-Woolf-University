@@ -1,8 +1,14 @@
-# імпортуємо модуль collections для використання namedtuple
-import collection
+#TASK1
 
-# сторюємо іменований кортеж Person із зазначеними полями
+import collections 
+
 Person = collections.namedtuple('Person', ['first_name', 'last_name', 'age', 'birth_place', 'post_index'])
 
-# Створюємо екземпляр Person з конкретними значеннями 
-person = Person('Mick', 'Nitch', 35, 'Boston', '01146')
+person = Person('Maks', 'Lazoryk', 18, 'Lviv', '01146')
+
+print(person.first_name)
+
+print(person.last_name)
+print(person.age)
+print(person.birth_place)
+print(person.post_index)
