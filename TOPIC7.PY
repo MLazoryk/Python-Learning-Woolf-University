@@ -26,7 +26,13 @@
 #TASK3
 student_marks = [4, 2, 4, 6, 7, 4, 2, 3, 4, 5, 6, 6, 7, 1, 1, 1, 3, 5]
 
+# Empty dictionary to store mark counts
 mark_counts = {}
 
+# Loop through each mark in the list
+for mark in student_marks:
 
+    # Check if mark already exists in dictionary
+    if mark in mark_counts:
 
+        
