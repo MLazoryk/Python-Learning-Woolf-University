@@ -24,15 +24,40 @@
 
 
 #TASK3
-student_marks = [4, 2, 4, 6, 7, 4, 2, 3, 4, 5, 6, 6, 7, 1, 1, 1, 3, 5]
+#student_marks = [4, 2, 4, 6, 7, 4, 2, 3, 4, 5, 6, 6, 7, 1, 1, 1, 3, 5]
 
 # Empty dictionary to store mark counts
-mark_counts = {}
+#mark_counts = {}
 
 # Loop through each mark in the list
-for mark in student_marks:
+#for mark in student_marks:
 
     # Check if mark already exists in dictionary
-    if mark in mark_counts:
+#    if mark in mark_counts:
 
-        
+        # Increment count if mark exists
+#        mark_counts[mark] += 1
+
+#    else:
+
+        # Imitialize count to 1 if mark doesn't exist
+#        mark_counts[mark] = 1
+
+# Print the final dictionary with mark frequencies        
+#print(mark_counts)
+
+
+
+# TASK4 (same task as previous)
+#import collections
+
+# student_marks = [4, 2, 4, 6, 7, 4, 2, 3, 4, 5, 6, 6, 7, 1, 1, 1, 3, 5]
+
+# mark_counts = collections.Counter(student_marks)
+
+
+
+# TASK5
+import collections
+student_marks = [4, 2, 4, 6, 7, 4, 2, 3, 4, 5, 6, 6, 7, 1, 1, 1, 3, 5]
+
