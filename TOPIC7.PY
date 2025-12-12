@@ -20,3 +20,4 @@ Cat = collections.namedtuple('Cat',['nickname','age','owner'])
 
 cat = Cat('Mafia', 4, 'Robert')
 
+print(f"This is a cat {cat.nickname}, {cat.age} age, his owner {cat.owner}")
