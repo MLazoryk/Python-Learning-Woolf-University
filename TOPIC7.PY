@@ -229,3 +229,14 @@ d.append('last')
 # Add 'first' tp the left end of deque
 d.appendleft('first')
 
+# Print current deque (convertr to list for display)
+print("the deque after adding the elements:", list(d))
+
+# Remove and return element from right end
+print("Removed last element:", d.pop())
+
+# Remove and return element from left and 
+print("Removed first element:", d.popleft())
+
+# Print the queue after removing the elements
+print("The deque after removing certain elements:", list(d))
