@@ -311,3 +311,7 @@ print("Default rounding ROUND_HALF_EVEN:", number.quantize(Decimal("0.0")))
 
 # ROUND_HALF_UP - normal rounding (like in school)
 print("Round up ROUND_HALF_UP:", number.quantize(Decimal("0.0"), rounding=decimal.ROUND_HALF_UP))
+
+# ROUNF_FLOOR - always round DOWN
+print("Round down ROUND_FLOOR:", number.quantize(Decimal("0.0"), rounding=decimal.ROUND_FLOOR))
+
