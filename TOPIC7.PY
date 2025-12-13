@@ -309,3 +309,5 @@ number = Decimal("1.45")
 # Default rounding (ROUND_HALF_EVEN) - round to nearest EVEN number
 print("Default rounding ROUND_HALF_EVEN:", number.quantize(Decimal("0.0")))
 
+# ROUND_HALF_UP - normal rounding (like in school)
+print("Round up ROUND_HALF_UP:", number.quantize(Decimal("0.0"), rounding=decimal.ROUND_HALF_UP))
