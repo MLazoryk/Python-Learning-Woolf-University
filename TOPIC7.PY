@@ -244,35 +244,46 @@
 
 
 #TASK11
-from collections import deque 
+#from collections import deque 
   
 # Maka a list of 4 tasks to do 
 # Each task has 2 pieces of info: type (fast/slow) and name (waht to do)
-tasks = [
-    {"type": "fast", "name": "Помити посуд"},
-    {"type": "slow", "name": "Подивитись серіал"},
-    {"type": "fast", "name": "Вигулти собаку"},
-    {"type": "slow", "name": "Почитати книгу"}
-]
+#tasks = [
+#    {"type": "fast", "name": "Помити посуд"},
+#    {"type": "slow", "name": "Подивитись серіал"},
+#    {"type": "fast", "name": "Вигулти собаку"},
+#    {"type": "slow", "name": "Почитати книгу"}
+#]
 
 # Create am empty task queue 
-task_queue = deque()
+#task_queue = deque()
 
 # Go through each task one by one
-for task in tasks:
+#for task in tasks:
     # Check if task is "fast" type (high priority)
-    if task["type"] == "fast":
+#    if task["type"] == "fast":
         # Put fast task at FRONT of queue (will be done first)
-        task_queue.appendleft(task)
-        print(f"Added fast task: {task['name']}")
-    else:
+#        task_queue.appendleft(task)
+#        print(f"Added fast task: {task['name']}")
+#    else:
         # Put slow task at BACK of queue (will be done later)
-        task_queue.append(task)
-        print(f"Added slow task: {task['name']}")
+#        task_queue.append(task)
+#        print(f"Added slow task: {task['name']}")
 
 # Now do all tasks in the queue 
 # Keep going while there are tasks left
-while task_queue:
+#while task_queue:
     # Take task from FRONT of queue (highes priority)
-    task = task_queue.popleft()
-    print(f"Doing task: {task['name']}")
+#    task = task_queue.popleft()
+#    print(f"Doing task: {task['name']}")
+
+
+
+#TASK12
+# Import Decimal for precise decimal numbers and ROUND_DOWN for rounding method
+from decimal import Decimal, ROUND_DOWN
+
+# Create a decimal number 3.14159
+# using Decimal ('3,14159' instead of float for exact decimal representation)
+number = Decimal('3.14159')
+
