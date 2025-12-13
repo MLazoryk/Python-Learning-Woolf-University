@@ -287,3 +287,11 @@ from decimal import Decimal, ROUND_DOWN
 # using Decimal ('3,14159' instead of float for exact decimal representation)
 number = Decimal('3.14159')
 
+# Round the number to 2 deciaml places
+# quantize() = set how many decimal places too keep
+# Example: 3.14159 >>> 3.14 (not 3.15)
+rounded_number = number.quantize(Decimal('0.00'), rounding = ROUND_DOWN)
+
+print(rounded_number)
+
+
