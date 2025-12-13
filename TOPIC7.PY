@@ -170,4 +170,8 @@
 # Deque = "double-ended queue" - can add/remove from both ends
 from collections import deque
 
+# Create an empty queue using deque
+# Queue = data structure like a line of people - first in, first out (FIFO)
+queue  = deque()
 
+#
