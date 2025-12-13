@@ -1,64 +1,64 @@
 # TASK 1
 # Function to create an empty stack
 # Stack = data structure like a pile of plates - last in, first out (LIFO)
-def create_stack():
-    return []  # Return an empty list (list will act as our stack)
+#def create_stack():
+#    return []  # Return an empty list (list will act as our stack)
 
 # Function to check if stack is empty
-def is_empty(stack):
-    return len(stack) == 0  # True if stack has no elements (0 items)
+#def is_empty(stack):
+#    return len(stack) == 0  # True if stack has no elements (0 items)
 
 # Function to add element to top of stack
 # Append = add to the end
-def push(stack, item):
-    stack.append(item)  # Add item to end of list (top of stack)
+#def push(stack, item):
+#    stack.append(item)  # Add item to end of list (top of stack)
 
 # Function to remove element from top of stack
 # Pop = remove the last/top element
-def pop(stack):
-    if not is_empty(stack):  # Check if stack is not empty
-        return stack.pop()  # Remove and return last element (from top)
-    else:
-        print("Стек порожній")  # Print error message (Stack is empty)
+#def pop(stack):
+#    if not is_empty(stack):  # Check if stack is not empty
+#        return stack.pop()  # Remove and return last element (from top)
+#    else:
+#        print("Стек порожній")  # Print error message (Stack is empty)
 
 # Function to view top element without removing it
 # Peek = look at the top element without removing it
-def peek(stack):
-    if not is_empty(stack):  # Check if stack is not empty
-        return stack[-1]  # Return last element (top of stack)
-    else:
-        print("Стек порожній")  # Print error message (Stack is empty)
+#def peek(stack):
+#    if not is_empty(stack):  # Check if stack is not empty
+#        return stack[-1]  # Return last element (top of stack)
+#    else:
+#        print("Стек порожній")  # Print error message (Stack is empty)
 
 
 # Create a new stack (initialize an empty stack)
-stack = create_stack()
+#stack = create_stack()
 
 # Add three elements to stack (push them onto stack)
-push(stack, 'a')  # Stack: ['a'] - add 'a' to stack
-push(stack, 'b')  # Stack: ['a', 'b'] - add 'b' to top
-push(stack, 'c')  # Stack: ['a', 'b', 'c'] - add 'c' to top
+#push(stack, 'a')  # Stack: ['a'] - add 'a' to stack
+#push(stack, 'b')  # Stack: ['a', 'b'] - add 'b' to top
+#push(stack, 'c')  # Stack: ['a', 'b', 'c'] - add 'c' to top
 
 # Show current stack (display all elements)
-print("Поточний стек:", stack)  # Output: ['a', 'b', 'c']
+#print("Поточний стек:", stack)  # Output: ['a', 'b', 'c']
 
 # Show top element (look at what's on top without removing)
-print("Верхній елемент:", peek(stack))  # Output: 'c' (last element added)
+#print("Верхній елемент:", peek(stack))  # Output: 'c' (last element added)
 
 # Remove top element (take 'c' off the stack)
-print("Видалений елемент:", pop(stack))  # Output: 'c' (removed element)
+#print("Видалений елемент:", pop(stack))  # Output: 'c' (removed element)
 
 # Show stack after removing top (what's left in stack)
-print("Стек після pop:", stack)  # Output: ['a', 'b'] (now 'b' is on top)
+#print("Стек після pop:", stack)  # Output: ['a', 'b'] (now 'b' is on top)
 
 # Check if stack is empty (is there anything left?)
-print("Стек порожній?", is_empty(stack))  # Output: False (not empty, has 2 items)
+#print("Стек порожній?", is_empty(stack))  # Output: False (not empty, has 2 items)
 
 # Remove remaining elements (take elements off one by one)
-pop(stack)  # Removes 'b' -> Stack: ['a'] (top element 'b' removed)
-pop(stack)  # Removes 'a' -> Stack: [] (last element 'a' removed)
+#pop(stack)  # Removes 'b' -> Stack: ['a'] (top element 'b' removed)
+#pop(stack)  # Removes 'a' -> Stack: [] (last element 'a' removed)
 
 # Check if stack is empty now (all elements removed)
-print("Стек порожній?", is_empty(stack))  # Output: True (stack is now empty)
+#print("Стек порожній?", is_empty(stack))  # Output: True (stack is now empty)
 
 # Вихід програми буде виглядати так:
 # Поточний стек: ['a', 'b', 'c']
