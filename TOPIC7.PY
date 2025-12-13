@@ -150,7 +150,7 @@
 
 
 
-#TASK 8 
+#TASK8 
 #import collections 
 
 #Person = collections.namedtuple('Person', ['first_name', 'last_name', 'age', 'birth_place', 'post_index'])
@@ -162,3 +162,12 @@
 #print(person.age)
 #print(person.birth_place)
 #print(person.post_index)
+
+
+
+# TASK9
+# Import deque class from collection module
+# Deque = "double-ended queue" - can add/remove from both ends
+from collections import deque
+
+
