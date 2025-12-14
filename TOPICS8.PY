@@ -59,3 +59,9 @@ from typing import Callable
 # discount_percentage = how much % off (like 10 for 10% off)
 # Returns: a function that applies that discount to prices
 def discount (discount_percentage: int) ->Callable[[float], float]:
+    def apply_discount(price: float) ->float:
+        # Calculate: price - (discount % of price)
+        # Example: price = 500, discount = 10%; 500 * (1 - 10/100) = 500 * 0.9 = 450
+        return price * (1 - discount_percentage / 100)
+    # Return the discount calculator function
+    return apply_discount
