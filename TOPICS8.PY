@@ -73,3 +73,8 @@ ten_percent_discount = discount(10)
 # Create a 20% discount calculator
 # twenty_percent_discount = function that gives 20% any price
 twenty_percent_discount = discount(20)
+
+# Use 10% discount on 500$
+# 500 - 10% = 500 * 0.9 = 450
+discounted_price = ten_percent_discount(500) # Result: 450.0
+print(discounted_price)
