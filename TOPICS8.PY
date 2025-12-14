@@ -33,19 +33,29 @@
 
 # TASK2
 # msg = text message to remember
-def outer_fucntion(msg):
+#def outer_fucntion(msg):
     # Save the message in a variable
-    message = msg
+#    message = msg
 
-    def inner_function():
-        print(message)
+#    def inner_function():
+#        print(message)
         
         # Give back the inner function (not call it)
-    return inner_function
+#    return inner_function
 
 # my_func = a new function that knows to print "Hello, world!"
-my_func = outer_fucntion("Hello, world!")
+#my_func = outer_fucntion("Hello, world!")
 
 # Call the created function
 # It print the remembered message
-my_func() # Output: Hello, world!
+#my_func() # Output: Hello, world!
+
+
+
+# TASK3
+from typing import Callable
+
+# Function that creates dicount calculators
+# discount_percentage = how much % off (like 10 for 10% off)
+# Returns: a function that applies that discount to prices
+def discount (discount_percentage: int) ->Callable[[float], float]:
