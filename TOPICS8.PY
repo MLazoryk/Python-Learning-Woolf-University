@@ -13,8 +13,13 @@ def add(a: int, b: int) -> int:
 def multiply(a: int, b: int) -> int:
     return a * b # Retubr multiplication of a and b
 
-# Define function 'apply_operation'
-# Takes: a (int), b ( int), and operation (a function that takes 2 ints and returns int)
-# Callable[[int, int], int] = a function that takes two integers and retunrs one integer
+# Callable [[int, int], int] means: 
+# [[int, int]] = the function needs 2 integer inputs
+# , int] = the function returns 1 integer output
 def apply_operation(a: int, b: int, operation : Callable[[int, int], int]) -> int:
     return operation(a,b) # Call the operation function with a and b
+
+# Call apply_operations with 'add' function
+# operations=add means "use the add funciton"
+result_add = apply_operation(5, 3, add)
+
